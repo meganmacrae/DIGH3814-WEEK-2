@@ -45,3 +45,17 @@
 5. After going back to Sublime text and saving the file into the proper directory, I was able to correct the issue in terminal.
 
 1[second terminal screenshot](second_terminal_screenshot.jpeg)
+### Using Python to Generate a List of urls
+1. First, I made a new directory by copying "mkdir war-diaries
+".
+2. Then, I copied the given script into Sublime text and saved it as "urls.py" in the war-diaries directory.
+3. I went back to terminal and typed in "ls" and as expected, the war-diaries folder came up.
+4. I followed the instructions by then copying "python urls.py" into the terminal, however, I was told that there was no such file or directory.
+
+![third terminal screenshot](third_terminal_screenshot.jpeg)
+5. I went to my dad for help and he informed me that in terminal, I had not yet entered the war-diaries directory.
+6. I fixed the issue by typing "ls" into terminal, then "cd war-diaries".
+7. Next, I copied "python urls.py" into terminal and after typing "ls" again, "urls.txt" came up.
+
+![fourth terminal screenshot](fourth_terminal_screenshot.jpeg)
+8. Note: It was at this moment when I realize the mistake I had made in the previous stage while trying to use Wget with a list of urls. 
