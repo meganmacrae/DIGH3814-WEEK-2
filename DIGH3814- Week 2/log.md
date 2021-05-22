@@ -25,4 +25,23 @@
  and barplot(years, main="Publication Year", xlab="Year", ylab="Number of Articles") to find the number of articles published each year.
  13. As expected, a graph titled "Publication Year" showed up in the bottom right pane.
 
- ![RStudio screenshot](RStudio_screenshot.jpeg)
+![RStudio screenshot](RStudio_screenshot.jpeg)
+## Wget
+1. First, I installed a tool called "homebrew" by copying the command, /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)", into terminal.
+2. I then copied "brew doctor" into the terminal to ensure everything was set up correctly. At first, I kept receiving "command not found", but I quickly realized it was because I was failing to press "return" after copying the link.
+3. The next step was to install wget and so I copied "brew install wget" into terminal.
+4. Following the instructions, my next step was to test that wget successfully installed and I did this by copying "wget" into terminal.
+5. Terminal then responded with the message "missing url" and so I knew wget had been successfully installed.
+6. The next step instructed me to create a new directory to work in, I began this process by coping "mkdir wget-activehistory" and "cd wget-activehistory" into terminal.
+7. The next step was then to copy "wget http://activehistory.ca/papers/" into terminal and then look around the directory to see what got downloaded.
+8. Finally, I was able to copy "wget -r -np -w 2 --limit-rate=20k http://activehistory.ca/papers/" which told wget to follow links which led to destinations in that specific folder.
+### Using Wget With a List of urls
+1. Following the instructions, I went into my text editor, Sublime text and copied the 4  given urls into it and then saved the file as "urls.txt".
+2. Then, I went back into terminal and and copied  "wget -i urls.txt -r --no-parent -nd -w 2 --limit-rate=100k".
+3. Note: Initially, terminal told me that there were "no such files in directory" and this puzzled me for a few days.
+
+![first terminal screenshot](first_terminal_screenshot)
+4. After moving onto the next task, I came back to the issue and realized that I was not saving the "urls.txt" file from Sublime text directly into the "wget-activehistory" directory.
+5. After going back to Sublime text and saving the file into the proper directory, I was able to correct the issue in terminal.
+
+1[second terminal screenshot](second_terminal_screenshot)
