@@ -40,8 +40,8 @@
 2. Then, I went back into terminal and and copied  "wget -i urls.txt -r --no-parent -nd -w 2 --limit-rate=100k".
 3. Note: Initially, terminal told me that there were "no such files in directory" and this puzzled me for a few days.
 
-![first terminal screenshot](first_terminal_screenshot)
+![first terminal screenshot](first_terminal_screenshot.jpeg)
 4. After moving onto the next task, I came back to the issue and realized that I was not saving the "urls.txt" file from Sublime text directly into the "wget-activehistory" directory.
 5. After going back to Sublime text and saving the file into the proper directory, I was able to correct the issue in terminal.
 
-1[second terminal screenshot](second_terminal_screenshot)
+1[second terminal screenshot](second_terminal_screenshot.jpeg)
